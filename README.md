@@ -2,7 +2,7 @@
 # De-biasing a Gender-Biased Chest X-ray Classification Model
 This repository if for the final project for Duke 2023 Spring IDS 705 final project. This project is done collaboratively by *Ya-Yun Huang, John, Aditya Emmanuel Arokiaraj, Van Meter, Kristi Ann and Wang, Zhonglin*.
 
-This project aims to detect underdiagnosis bias for under-served peopole, such as female, black and low socio-economic status, in the CNN model that is trained on the dataset where these people are under-represented. We mainly focus on the underdiagnosis bias for female in the CNN model used for CXR binary task classifiaction(with clinical finiding and without). 
+This project aims to **detect underdiagnosis bias for under-served peopole, such as female, black and low socio-economic status, in the CNN model that is trained on the dataset where these people are under-represented**. We mainly focus on the underdiagnosis bias for female in the CNN model used for CXR binary task classifiaction(with clinical finiding and without). 
 
 The main goal of this dataset includes 2 section:
 1. Introduce gender bias to the model and detect the bias with the fairness metric we defined.
@@ -29,4 +29,10 @@ Eventually we would have 3 model:
 - `training_testing_unbiased.ipynb`: Training and testing code for the unbiased model.
 - `training_testing_debiased.ipynb`: Training and testing code for the de-biased model.
 - `requirements.txt`: All dependencies required to install to run the code in this repository.
+
+## Data
+We utilize the [**National Institute of Health Chest X-Ray dataset made publically available on Kaggle in 2018**](https://www.kaggle.com/datasets/nih-chest-xrays/data). This dataset include 2 parts: one includes all of the 112,120 CXR images and one is a `.csv` file that includes information for each CXR images. Due to limited computational resources, we were not able to conduct this project with all of the images and to upload those images to these github repo. Therefore, for our experiment we uploaded each folder of image data(`image`, `image2` to `image12`) and the information csv file `Data_Entry_2017.csv` to google drive and use google colab to accesss these files in google drive. 
+
+All of the data used in this project can be found in the Kaggle link provided above and the pre-processing code to get the final subset of data used for this project can be found in the file `EDA_preprocessing.ipynb`.
+
 (a) contain a descriptive README.md file that explains what the repo is for, and how to use the code to reproduce your work (including how to set it up to run), (b) be well commented throughout all files, (c) list all dependencies in a requirements.txt file, (d) inform the user how to get the data and includes all preprocessing code, and (e) actually runs (i.e. we can successfully test it) and does what it says
