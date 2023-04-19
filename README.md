@@ -1,6 +1,6 @@
 ### IDS705 final project
 # De-biasing a Gender-Biased Chest X-ray Classification Model
-This repository if for the final project for Duke 2023 Spring IDS 705 final project. This project is done collaboratively by Ya-Yun Huang, John, Aditya Emmanuel Arokiaraj, Van Meter, Kristi Ann and Wang, Zhonglin.
+This repository if for the final project for Duke 2023 Spring IDS 705 final project. This project is done collaboratively by *Ya-Yun Huang, John, Aditya Emmanuel Arokiaraj, Van Meter, Kristi Ann and Wang, Zhonglin*.
 
 This project aims to detect underdiagnosis bias for under-served peopole, such as female, black and low socio-economic status, in the CNN model that is trained on the dataset where these people are under-represented. We mainly focus on the underdiagnosis bias for female in the CNN model used for CXR binary task classifiaction(with clinical finiding and without). 
 
@@ -24,5 +24,9 @@ Eventually we would have 3 model:
 
 
 ## Files description
-- 
+- EDA_preprocessing.ipynb: Exploratory analysis of the orignial dataset and the code for producing the dataset we used for modeling and testing
+- training_testing_biased.ipynb: Training and testing code for the biased model.
+- training_testing_unbiased.ipynb: Training and testing code for the unbiased model.
+- training_testing_debiased.ipynb: Training and testing code for the de-biased model.
+- requirements.txt: All dependencies required to install to run the code in this repository.
 (a) contain a descriptive README.md file that explains what the repo is for, and how to use the code to reproduce your work (including how to set it up to run), (b) be well commented throughout all files, (c) list all dependencies in a requirements.txt file, (d) inform the user how to get the data and includes all preprocessing code, and (e) actually runs (i.e. we can successfully test it) and does what it says
