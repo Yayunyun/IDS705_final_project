@@ -35,4 +35,6 @@ We utilize the [**National Institute of Health Chest X-Ray dataset made publical
 
 All of the data used in this project can be found in the Kaggle link provided above and the pre-processing code to get the final subset of data used for this project can be found in the file `EDA_preprocessing.ipynb`.
 
-(a) contain a descriptive README.md file that explains what the repo is for, and how to use the code to reproduce your work (including how to set it up to run), (b) be well commented throughout all files, (c) list all dependencies in a requirements.txt file, (d) inform the user how to get the data and includes all preprocessing code, and (e) actually runs (i.e. we can successfully test it) and does what it says
+## Training and testing
+To run the code in `training_testing_biased.ipynb`, `training_testing_unbiased.ipynb`, and `training_testing_debiased.ipynb`, the user has to finish the steps in `EDA_preprocessing.ipynb` to get the needed data. After getting those data, user just need to run the jupyter notebook step by step to reproduce the result.   
+The only thing need to pay attention is the file path of the data. Since for this project, we use our personal google drive to save files, so the file path listed in these notebooks maybe different if others want to run.
