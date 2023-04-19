@@ -33,7 +33,7 @@ Eventually we would have 3 model:
 ## Data
 We utilize the [**National Institute of Health Chest X-Ray dataset made publically available on Kaggle in 2018**](https://www.kaggle.com/datasets/nih-chest-xrays/data). This dataset include 2 parts: one includes all of the 112,120 CXR images and one is a `.csv` file that includes information for each CXR images. Due to limited computational resources, we were not able to conduct this project with all of the images and to upload those images to these github repo. Therefore, for our experiment we uploaded each folder of image data(`image`, `image2` to `image12`) and the information csv file `Data_Entry_2017.csv` to google drive and use google colab to accesss these files in google drive. 
 
-All of the data used in this project can be found in the Kaggle link provided above and the pre-processing code to get the final subset of data used for this project can be found in the file `EDA_preprocessing.ipynb`.
+All of the data used in this project can be found in the Kaggle link provided above. The pre-processing code is used to get the final subset of data used for this project can be found in the file `EDA_preprocessing.ipynb`.
 
 ## Training and testing
 To run the code in `training_testing_biased.ipynb`, `training_testing_unbiased.ipynb`, and `training_testing_debiased.ipynb`, the user has to finish the steps in `EDA_preprocessing.ipynb` to get the needed data. After getting those data, user just need to run the jupyter notebook step by step to reproduce the result.   
